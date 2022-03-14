@@ -216,4 +216,9 @@ export const artifactSelectProps = {
     itemRenderer: render,
     items: items.Chinese,
   },
+  Japanese: {
+    itemPredicate: filter,
+    itemRenderer: render,
+    items: items.Japanese,
+  },
 };
