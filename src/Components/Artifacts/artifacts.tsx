@@ -39,6 +39,8 @@ export const artifactKeyToName = {
     wandererstroupe: "Wanderer's Troupe",
   },
   Chinese: {
+    echoesofanoffering: "Echoes of an Offering",
+    vermillion: "Vermillion Hereafter",
     archaicpetra: "悠古的磐岩",
     berserker: "战狂",
     blizzardstrayer: "冰风迷途的勇士",
@@ -109,6 +111,8 @@ export const artifactKeyToName = {
     tinymiracle: "奇迹",
     viridescentvenerer: "翠绿之影",
     wandererstroupe: "流浪大地的乐团",
+    echoesofanoffering: "Echoes of an Offering",
+    vermillion: "Vermillion Hereafter",
   },
 };
 

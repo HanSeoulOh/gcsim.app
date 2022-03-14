@@ -326,6 +326,12 @@ export const characterKeyToICharacter:{
       element: "pyro",
       weapon_type: "bow",
     },
+    ayato: {
+      key: "ayato",
+      name: "Kamisato Ayato",
+      element: "hydro",
+      weapon_type: "sword",
+    },
     barbara: {
       key: "barbara",
       name: "芭芭拉",
@@ -586,6 +592,12 @@ export const characterKeyToICharacter:{
     },
   },
   Japanese: {
+    ayato: {
+      key: "ayato",
+      name: "Kamisato Ayato",
+      element: "hydro",
+      weapon_type: "sword",
+    },
     aether: {
       key: "aether",
       name: "空",
