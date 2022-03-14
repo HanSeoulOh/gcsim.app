@@ -948,6 +948,9 @@ export const items= {
   Chinese: Object.keys(characterKeyToICharacter.Chinese).map(
     (k) => newCharCn(k)
   ),
+  Japanese: Object.keys(characterKeyToICharacter.Japanese).map(
+    (k) => newCharCn(k)
+  ),
 };
 export const elementRender: {
   [key: string] : {[key: string]: string}}
