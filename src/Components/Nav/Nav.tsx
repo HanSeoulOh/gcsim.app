@@ -74,6 +74,7 @@ export default function Nav() {
                 onChange={(e) => i18n.changeLanguage(e.target.value)}>
           <option value="English">{t("nav.english")}</option>
           <option value="Chinese">{t("nav.chinese")}</option>
+          <option value="Japanese">{t("nav.japanese")}</option>
         </select>
       </NavbarGroup>
     </Navbar>
