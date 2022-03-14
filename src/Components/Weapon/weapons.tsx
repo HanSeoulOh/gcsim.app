@@ -502,4 +502,9 @@ export const weaponSelectProps = {
     itemRenderer: renderWeapon,
     items: weapons.Chinese,
   },
+  Japanese: {
+    itemPredicate: filterWeapon,
+    itemRenderer: renderWeapon,
+    items: weapons.Japanese,
+  },
 };

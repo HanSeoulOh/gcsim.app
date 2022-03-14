@@ -987,6 +987,16 @@ export const elementRender: {
     electro: "雷属性",
     dendro: "草属性",
   },
+  Japanese: {
+    none: "无属性",
+    anemo: "风属性",
+    geo: "岩属性",
+    pyro: "火属性",
+    cryo: "冰属性",
+    hydro: "水属性",
+    electro: "雷属性",
+    dendro: "草属性",
+  },
 }
 
 
@@ -1029,6 +1039,27 @@ export const render: {[key: string]: ItemRenderer<Character>} = {
             ? elementRender.Chinese[item.element].concat(`, Imported: ${item.date_added}`)
             : elementRender.Chinese[item.element]
         }`}
+        key={`${item.date_added ? item.name.concat(item.date_added) : item.name}`}
+        onClick={handleClick}
+        text={highlightText(item.name, query)}
+      />
+    );
+  },
+  Japanese: (
+    item: Character,
+    { handleClick, modifiers, query }
+  ) => {
+    if (!modifiers.matchesPredicate) {
+      return null;
+    }
+    return (
+      <MenuItem
+        active={modifiers.active}
+        disabled={modifiers.disabled}
+        label={`${item.date_added
+            ? elementRender.Chinese[item.element].concat(`, Imported: ${item.date_added}`)
+            : elementRender.Chinese[item.element]
+          }`}
         key={`${item.date_added ? item.name.concat(item.date_added) : item.name}`}
         onClick={handleClick}
         text={highlightText(item.name, query)}
