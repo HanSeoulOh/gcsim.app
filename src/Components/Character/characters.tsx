@@ -953,7 +953,7 @@ const newCharCn = (name: string): Character => {
 };
 
 const newCharJp = (name: string): Character => {
-  const c = characterKeyToICharacter.Chinese[name];
+  const c = characterKeyToICharacter.Japanese[name];
   //default weapons
   return {
     name: name,
