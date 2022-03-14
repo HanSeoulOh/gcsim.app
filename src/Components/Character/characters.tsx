@@ -952,6 +952,34 @@ const newCharCn = (name: string): Character => {
   };
 };
 
+const newCharJp = (name: string): Character => {
+  const c = characterKeyToICharacter.Chinese[name];
+  //default weapons
+  return {
+    name: name,
+    level: 80,
+    max_level: 90,
+    element: c.element,
+    cons: 0,
+    weapon: {
+      name: "dullblade",
+      refine: 1,
+      level: 1,
+      max_level: 20,
+    },
+    talents: {
+      attack: 6,
+      skill: 6,
+      burst: 6,
+    },
+    stats: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    snapshot: [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    ],
+    sets: {},
+  };
+};
+
 export const items= {
   English: Object.keys(characterKeyToICharacter.English).map(
     (k) => newCharEng(k)
@@ -961,7 +989,7 @@ export const items= {
     (k) => newCharCn(k)
   ),
   Japanese: Object.keys(characterKeyToICharacter.Japanese).map(
-    (k) => newCharCn(k)
+    (k) => newCharJp(k)
   ),
 };
 export const elementRender: {
